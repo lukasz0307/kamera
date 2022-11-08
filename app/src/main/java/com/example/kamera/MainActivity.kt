@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity() {
         if (requestCode==111&&grantResults[0]==PackageManager.PERMISSION_GRANTED){
             val binding=ActivityMainBinding.inflate(layoutInflater)
             setContentView(binding.root)
+            binding.button.isEnabled=true
         }
     }
 }
