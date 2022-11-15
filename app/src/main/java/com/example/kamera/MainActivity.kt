@@ -9,6 +9,7 @@ import android.location.LocationManager
 import android.location.LocationRequest
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Looper
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.TextView
@@ -71,6 +72,15 @@ private var PERMISSION_ID=1000
         }else{
             RequestPermission()
         }
+    }
+
+    private fun getNewLocation(){
+        locationRequest=LocationRequest()
+        locationRequest.priority=LocationRequest.PRIORITY_HIGH_ACCURACY
+        locationRequest.interval=0
+        locationRequest.fastestinterval=0
+        locationRequest.numUpdates=2
+        fusedLocationProviderClient!!.requestLocationUpdates(locationRequest.locationCallback,Looper.myLooper())
     }
 
 
