@@ -10,6 +10,7 @@
         android:layout_height="300dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/image"
+        android:background="@drawable/ic_launcher_background"
     />
 
 
