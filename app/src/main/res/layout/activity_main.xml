@@ -51,5 +51,7 @@
         android:layout_below="@+id/dostawca"
         android:layout_centerHorizontal="true"
         android:text="Schowaj dane z gpsa"
+        android:id="@+id/gps"
+
         />
 </RelativeLayout>
