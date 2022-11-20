@@ -45,4 +45,11 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/dostawca"
         />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dostawca"
+        android:layout_centerHorizontal="true"
+        android:text="Schowaj dane z gpsa"
+        />
 </RelativeLayout>
